@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+     <style>
+      body{
+        background-color:#01821f;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+      <h1>My Favorite TOOL Songs</h1>
+      <div id="plot"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/civuoU_NE38?si=pJviu4ask1VzgaHb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MM62wjLrgmA?si=rDISWv_75kSJuGd5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/h_TUP2vuaDs?si=eknXzDMC60-t7zED" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><a href="index.html">Return to the homepage</a></p>
+      <hr>
+      <p>&copy; STEM Prep 2026</p>
+    </center>
+    <script>
+    var songs=["The Pot","Schism","Vicarious"];
+      var views=[64223667,73286935,29125470];
+      var trace={
+        x:songs,
+        y:views,
+        type:"bar"
+      };
+      var data=[trace];
+      var layout={title:"My Favorite TOOl Songs"};
+      Plotly.newPlot("plot",data,layout);
+    </script>
+  </body>
+</html>
