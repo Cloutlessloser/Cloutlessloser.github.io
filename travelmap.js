@@ -1,6 +1,6 @@
 // 46.8139° N latitude and -71.2080° W longitude
 var coordinates = [46.8139, -71.2080];
-var place1 = [46.917, -70.900];
+var place1 = [46.9167, -70.9000];
 var place2 = [46.887508, -71.147911];
 var place3 = [46.811943, -71.205002];
 var map = L.map('map').setView(coordinates, 13);
