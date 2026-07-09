@@ -9,4 +9,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from Quebec City!</p>").addTo(map);
-var marker1 = L.circle(place1,{color: "black", fillColor: "#09c902", radius: 80}).addTo(map);
+var marker1 = L.circle(place1,{color: "black", fillColor: "#09c902", radius: 100}).addTo(map);
